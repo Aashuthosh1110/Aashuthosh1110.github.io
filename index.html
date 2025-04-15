@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aashuthosh S Sharma - Personal Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Aashuthosh S Sharma</h1>
+        <p>Hi there! I made a website about myself.</p>
+    </header>
+    
+    <div class="container">
+        <section class="about-section">
+            <h2>About Myself</h2>
+            <p>Hi! I'm Aashuthosh S Sharma. I'm 19 years old. I'm from Mangalore (Karnataka), born and grew up there. Love the city! Life is good. Speaking of family and home, I've got loving parents, a sweet grandma, and an elder brother at home. Unfortunately, I've let myself choose BTech in CS as my college degree and I'm still only in the first year. I'm enthusiastic about enjoying my life so I struggle to give a crap about academics. There's not much to note about me, I enjoy spending time alone but also like the company of friends.</p>
+        </section>
+        
+        <div class="nav-buttons">
+            <button class="nav-button" onclick="showSection('education')">Education</button>
+            <button class="nav-button" onclick="showSection('achievements')">Achievements</button>
+            <button class="nav-button" onclick="showSection('skills')">Technical Skills</button>
+            <button class="nav-button" onclick="showSection('profile')">Profile Picture</button>
+            <button class="nav-button" onclick="showSection('hometown')">Pictures from Hometown</button>
+            <button class="nav-button" onclick="showSection('text-analyzer')">Text Analyzer</button>
+            <button class="nav-button" onclick="showSection('others')">Others</button>
+        </div>
+        
+        <section id="education" class="section">
+            <h2>Education</h2>
+            <div class="achievement">
+                <h3>International Institute of Information Technology Hyderabad (IIITH)</h3>
+                <p>BTech + M.S., Computer Science + Geospatial Technology (2024 - 2029)</p>
+            </div>
+            <div class="achievement">
+                <h3>CFAL India</h3>
+                <p>High School, Science (2022 - 2024)</p>
+            </div>
+            <div class="achievement">
+                <h3>Mount Carmel</h3>
+                <p>3rd to 10th grade</p>
+            </div>
+            <div class="achievement">
+                <h3>SSRVM</h3>
+                <p>Nursery to 2nd grade</p>
+            </div>
+        </section>
+        
+        <section id="achievements" class="section">
+            <h2>Achievements</h2>
+            <div class="achievement">
+                <p>99.85 percentile in JEE Mains</p>
+            </div>
+            <div class="achievement">
+                <p>A score of 334 in BITSAT</p>
+            </div>
+            <div class="achievement">
+                <p>Rank 151 in UGEE</p>
+            </div>
+            <div class="achievement">
+                <p>Rank 6k in JEE Advanced</p>
+            </div>
+            <div class="achievement">
+                <p>Cleared PRMO and wrote RMO in 12th (Math Olympiad)</p>
+            </div>
+            <div class="achievement">
+                <p>Cleared NSEA and wrote INAO in 12th (Astronomy Olympiad)</p>
+            </div>
+        </section>
+        
+        <section id="skills" class="section">
+            <h2>Technical Skills</h2>
+            <h3>C/C++ Programming & DSA</h3>
+            <div class="skill-bar">
+                <div class="skill-level" style="width: 60%;">Acceptable</div>
+            </div>
+            
+            <h3>LLM Prompt Engineering</h3>
+            <div class="skill-bar">
+                <div class="skill-level" style="width: 80%;">Advanced</div>
+            </div>
+            
+            <h3>I'm not a huge fan of tech or CS</h3>
+            <div class="skill-bar">
+                <div class="skill-level" style="width: 100%;">Definitely</div>
+            </div>
+            
+            <a id="cv-link" href="assets/resume.pdf" download>Download CV</a>
+        </section>
+        
+        <section id="profile" class="section">
+            <h2>Profile Picture</h2>
+            <img src="assets/profile.jpg" alt="Aashuthosh S Sharma" class="profile-image">
+        </section>
+        
+        <section id="hometown" class="section">
+            <h2>Pictures from Mangalore (My Hometown)</h2>
+            <div class="gallery">
+                <img src="assets/mangalore1.jpg" alt="Mangalore Cityscape" class="gallery-image">
+                <img src="assets/mangalore2.jpg" alt="Mangalore Park" class="gallery-image">
+                <img src="assets/mangalore3.jpg" alt="Mangalore Landmarks" class="gallery-image">
+                <img src="assets/mangalore4.jpg" alt="Mangalore Beach" class="gallery-image">
+            </div>
+        </section>
+        
+        <section id="text-analyzer" class="section">
+            <h2>Text Analyzer</h2>
+            <p>Paste text (10,000+ words) in the box below and click "Analyze" to see statistics:</p>
+            <textarea class="text-input" id="text-input" placeholder="Paste your text here (10,000+ words recommended)..."></textarea>
+            <button class="analyze-button" onclick="analyzeText()">Analyze Text</button>
+            
+            <div class="text-analysis-results" id="text-analysis-results">
+                <p>Results will appear here after analysis.</p>
+            </div>
+        </section>
+        
+        <section id="others" class="section">
+            <h2>Others</h2>
+            <div class="achievement">
+                <p><a href="https://music.youtube.com/playlist?list=PLAj_M6DtBqaFhaxUNj4oc-K-RMTZDgNJ8" target="_blank">My music taste</a> - Website ain't much but that playlist slaps</p>
+            </div>
+            <div class="achievement">
+                <p><a href="https://www.instagram.com/sharmaaashuthosh05?igsh=MWxmMmd1OXk4NWMwag%3D%3D&utm_source=qr" target="_blank">My Instagram Profile</a></p>
+            </div>
+            <div class="achievement">
+                <p>Thank you for going through my website :)</p>
+            </div>
+        </section>
+    </div>
+    
+    <footer>
+        <p>&copy; 2025 Aashuthosh S Sharma | Contact: aashuthoshsadashivasharma@gmail.com</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
